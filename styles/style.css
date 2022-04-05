@@ -83,19 +83,19 @@ body {
     margin-bottom: 50px;
 }
 
-.books-grid {
+.library-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     color: white;
 }
 @media only screen and (max-width: 992px) {
-    .books-grid {
+    .library-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 @media only screen and (max-width: 576px) {
-    .books-grid {
+    .library-grid {
         grid-template-columns: 1fr;
     }
 }
