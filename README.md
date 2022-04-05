@@ -8,6 +8,7 @@
 
 <p align="center">
     <img src="https://i.gyazo.com/578f31bac6614ed3443c47b0a8e8b9d1.jpg" height="400">
+    <img src="https://i.gyazo.com/4ac501634f2dc2dc8698ade943041e27.jpg" height="400">
 </p>
 
 ## Goal
