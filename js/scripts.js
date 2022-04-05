@@ -1,3 +1,4 @@
+// query selectors
 const background = document.querySelector("#bg-image");
 
 const randomImg = () => {
