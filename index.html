@@ -5,44 +5,41 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
-            rel="stylesheet"
-        />
         <title>erik s. | google books</title>
         <script type="module" src="./js/scripts.js" defer></script>
     </head>
     <body>
-        <div class="bg-image"></div>
-        <div class="container">
-            <a href="index.html">
-                <header class="header">
-                    <div id="googleLogo">
-                        <span>Google</span>
-                        <span>Books</span>
-                    </div>
-                </header>
-            </a>
-            <div class="search">
-                <form action="" class="search__form">
-                    <input
-                        type="text"
-                        placeholder="Search for books..."
-                        class="search__input"
-                    />
-                    <button type="submit" class="search__button">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </form>
+        <div id="bg-image">
+            <div class="container">
+                <a href="index.html">
+                    <header class="header">
+                        <div>
+                            <span id="googleLogo">Google</span>
+                            <span>Books</span>
+                        </div>
+                    </header>
+                </a>
+                <div class="search">
+                    <form action="" class="search__form">
+                        <input
+                            class="search__input"
+                            type="text"
+                            placeholder="Search for books..."
+                        />
+                        <button class="search__button" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <section class="search-result-header">
+                    <h2 class="search-header">
+                        Find the perfect book for you.
+                    </h2>
+                </section>
+
+                <section class="books-grid"></section>
             </div>
-
-            <section class="search-result-header">
-                <h2 class="search-header">Find the perfect book for you.</h2>
-            </section>
-
-            <section class="books-grid"></section>
         </div>
     </body>
 </html>

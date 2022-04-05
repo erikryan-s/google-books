@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -10,10 +11,17 @@ body {
   background-color: #1f1f1f;
 }
 
-.bg-image {
+.search__form button, .search__form input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#bg-image {
   background-image: url("../assets/backgrounds/bg1.jpg");
-  filter: blur(10px);
-  -webkit-filter: blur(10px);
+  background-size: cover;
+  height: 100%;
+  text-align: center;
 }
 
 .container {
@@ -33,35 +41,91 @@ body {
   font-size: 3rem;
 }
 
+#googleLogo {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
 a:link {
   text-decoration: none;
 }
 
-#googleLogo {
-  display: flex;
-  flex-direction: row;
-  color: #c5c7c6;
+a:hover {
+  opacity: 0.8;
+}
+
+a:visited {
+  color: white;
 }
 
 .search-result-header h2 {
-  color: #c5c7c6;
-  letter-spacing: 2px;
+  color: white;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.search__form input {
+  width: 400px;
+  padding: 10px 45px 10px 0;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 20px;
+  word-spacing: 2px;
+  margin: 40px 0;
+}
+.search__form button {
+  margin-left: -20px;
+}
+.search__form button:hover {
+  cursor: pointer;
+}
+.search__form button i {
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+}
+@media only screen and (max-width: 414px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+  }
+  .search input {
+    width: auto;
+    padding: 10px 10px 10px 0;
+    overflow: hidden;
+  }
+  .search button {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 331px) {
+  .search {
+    display: flex;
+    flex-direction: column;
+  }
+  .search input {
+    width: 200px;
+    padding: 10px 10px 10px 0;
+    overflow: hidden;
+  }
+  .search button {
+    margin-left: 0;
+  }
 }
 
 .books-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  color: #c5c7c6;
+  gap: 15px;
+  color: white;
 }
-@media only screen and (max-width: 985px) {
+@media only screen and (max-width: 992px) {
   .books-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 576px) {
   .books-grid {
     grid-template-columns: 1fr;
   }
