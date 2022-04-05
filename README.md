@@ -12,9 +12,7 @@
 
 ## Goal
 
--   Use javascript logic to perform translation given the provided [requirements](#project-requirements)
--   Utilise DOM manipulation to display the logic on the translator display
--   Use logic to minimise the impact of edge cases
+-   [requirements](#project-requirements)
 
 ## Project Requirements
 
