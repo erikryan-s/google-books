@@ -46,9 +46,21 @@ body {
         color: white;
     }
 
-    &__google-logo {
+    &__logo {
         font-size: 4.5rem;
         font-weight: 500;
+        &--blue {
+            color: #4285f4;
+        }
+        &--red {
+            color: #db4437;
+        }
+        &--yellow {
+            color: #f4b400;
+        }
+        &--green {
+            color: #0f9d58;
+        }
     }
 
     &__books {
