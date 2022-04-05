@@ -18,7 +18,7 @@ body {
 }
 
 #bg-image {
-  background-image: url("../assets/backgrounds/bg1.jpg");
+  background-image: none;
   background-size: cover;
   height: 100%;
   text-align: center;

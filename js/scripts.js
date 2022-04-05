@@ -2,16 +2,22 @@ const background = document.querySelector("#bg-image");
 
 const randomImg = () => {
     let images = [
-        "../assets/backgrounds/bg1.jpg",
-        "../assets/backgrounds/bg2.jpg",
-        "../assets/backgrounds/bg3.jpg",
-        "../assets/backgrounds/bg4.jpg",
+        "bg1.jpg",
+        "bg2.jpg",
+        "bg3.jpg",
+        "bg4.jpg",
+        "bg5.jpg",
+        "bg6.jpg",
+        "bg7.jpg",
+        "bg8.jpg",
+        "bg9.jpg",
+        "bg10.jpg",
+        "bg11.jpg",
     ];
     let numOfImg = images.length;
     let i = Math.floor(numOfImg * Math.random());
-    const url = `${images[i]}`;
-    console.log(url);
-    background.style["background-image"].url = url;
+    const urlString = `url(./assets/backgrounds/${images[i]})`;
+    background.style.backgroundImage = urlString;
 };
 
 document.addEventListener("DOMContentLoaded", () => {
