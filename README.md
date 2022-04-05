@@ -4,7 +4,7 @@
 
 🔗 [Live Demo](https://erikryan-s.github.io/google-books/)
 
-## Screenshot
+## Screenshots
 
 <p align="center">
     <img src="https://i.gyazo.com/578f31bac6614ed3443c47b0a8e8b9d1.jpg" height="400">
