@@ -7,8 +7,8 @@
 ## Screenshots
 
 <p align="center">
-    <img src="https://i.gyazo.com/578f31bac6614ed3443c47b0a8e8b9d1.jpg" height="400">
-    <img src="https://i.gyazo.com/4ac501634f2dc2dc8698ade943041e27.jpg" height="400">
+    <img src="https://i.gyazo.com/578f31bac6614ed3443c47b0a8e8b9d1.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/4ac501634f2dc2dc8698ade943041e27.jpg" height="400" width=auto>
 </p>
 
 ## Goal
@@ -61,7 +61,7 @@ Bonus (**optional, but highly recommended**):
 ### Windows 10 Login Screen
 
 <p align="center">
-    <img src="https://thurrott.s3.amazonaws.com/2018/09/windows-10-skip-ahead.jpg" height="400">
+    <img src="https://thurrott.s3.amazonaws.com/2018/09/windows-10-skip-ahead.jpg" height="400" width=auto>
 </p>
 
 ## Future updates and current limitations
