@@ -46,7 +46,7 @@ Application Design (required):
 -   Always use iterators over loops
 -   Always parametrize and abstract large pieces of duplicate code.
 
-Bonus (optional, but highly recommended):
+Bonus (__optional, but highly recommended__):
 
 -   Give feedback to the user when no book results can be found for the query.
 -   When a user clicks a book in the grid, a modal should appear with more book information, think about release, publish date, country, languages, etc.
