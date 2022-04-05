@@ -12,7 +12,6 @@ const randomImg = () => {
         "bg8.jpg",
         "bg9.jpg",
         "bg10.jpg",
-        "bg11.jpg",
     ];
     let numOfImg = images.length;
     let i = Math.floor(numOfImg * Math.random());

@@ -80,6 +80,10 @@ a:visited {
             word-spacing: 2px;
             margin: 40px 0;
         }
+        ::placeholder {
+            color: white;
+            opacity: 0.5;
+        }
 
         button {
             margin-left: -20px;

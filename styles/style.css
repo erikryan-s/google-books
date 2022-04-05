@@ -74,6 +74,10 @@ a:visited {
   word-spacing: 2px;
   margin: 40px 0;
 }
+.search__form ::placeholder {
+  color: white;
+  opacity: 0.5;
+}
 .search__form button {
   margin-left: -20px;
 }
