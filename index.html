@@ -11,29 +11,63 @@
     <body>
         <div id="bg-image">
             <div class="container">
-                <a href="index.html">
-                    <header class="header">
+                <header class="header">
+                    <a class="header__link" href="index.html">
                         <div>
-                            <span id="googleLogo">Google</span>
-                            <span>Books</span>
+                            <span
+                                class="header__google-logo"
+                                style="color: #4285f4"
+                                >G</span
+                            >
+                            <span
+                                class="header__google-logo"
+                                style="color: #db4437"
+                                >o</span
+                            >
+                            <span
+                                class="header__google-logo"
+                                style="color: #f4b400"
+                                >o</span
+                            >
+                            <span
+                                class="header__google-logo"
+                                style="color: #4285f4"
+                                >g</span
+                            >
+                            <span
+                                class="header__google-logo"
+                                style="color: #0f9d58"
+                                >l</span
+                            >
+                            <span
+                                class="header__google-logo"
+                                style="color: #db4437"
+                                >e</span
+                            >
+                            <span class="header__books">Books</span>
                         </div>
-                    </header>
-                </a>
-                <div class="search">
-                    <form action="" class="search__form">
+                    </a>
+                </header>
+
+                <div class="searchbar">
+                    <form action="" class="searchbar__form">
                         <input
-                            class="search__input"
+                            class="searchbar__input"
                             type="text"
                             placeholder="Search for books..."
                         />
-                        <button class="search__button" type="submit">
-                            <i class="fas fa-search"></i>
+                        <button class="searchbar__button" type="submit">
+                            <img
+                                class="searchbar__button__img"
+                                src="./assets/search/search-button.png"
+                                alt="Search Button"
+                            />
                         </button>
                     </form>
                 </div>
 
-                <section class="search-result-header">
-                    <h2 class="search-header">
+                <section class="search-result">
+                    <h2 class="search-result__header">
                         Find the perfect book for you.
                     </h2>
                 </section>

@@ -11,7 +11,7 @@ body {
   background-color: #1f1f1f;
 }
 
-.search__form button, .search__form input {
+.searchbar__input {
   background: none;
   border: none;
   outline: none;
@@ -34,88 +34,53 @@ body {
   box-sizing: border-box;
 }
 
-.header {
+.header__link:link {
   text-decoration: none;
 }
-.header span {
-  font-size: 3rem;
+.header__link:hover {
+  opacity: 0.7;
 }
-
-#googleLogo {
-  display: flex;
-  flex-direction: row;
+.header__link:visited {
   color: white;
 }
-
-a:link {
-  text-decoration: none;
+.header__google-logo {
+  font-size: 4.5rem;
+  font-weight: 500;
+}
+.header__books {
+  font-size: 2.5rem;
 }
 
-a:hover {
-  opacity: 0.8;
-}
-
-a:visited {
+.searchbar__form ::placeholder {
   color: white;
+  opacity: 0.5;
 }
-
-.search-result-header h2 {
-  color: white;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.search__form input {
+.searchbar__input {
   width: 400px;
   padding: 10px 45px 10px 0;
   border-bottom: 2px solid white;
   color: white;
-  font-size: 20px;
-  word-spacing: 2px;
+  font-size: 1.2rem;
   margin: 40px 0;
 }
-.search__form ::placeholder {
-  color: white;
-  opacity: 0.5;
+.searchbar__button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  outline: inherit;
 }
-.search__form button {
-  margin-left: -20px;
-}
-.search__form button:hover {
+.searchbar__button:hover {
   cursor: pointer;
 }
-.search__form button i {
+.searchbar__button__img {
+  height: 25px;
+}
+
+.search-result__header {
   color: white;
-  font-size: 20px;
-  line-height: 20px;
-}
-@media only screen and (max-width: 414px) {
-  .search {
-    display: flex;
-    flex-direction: column;
-  }
-  .search input {
-    width: auto;
-    padding: 10px 10px 10px 0;
-    overflow: hidden;
-  }
-  .search button {
-    margin-left: 0;
-  }
-}
-@media only screen and (max-width: 331px) {
-  .search {
-    display: flex;
-    flex-direction: column;
-  }
-  .search input {
-    width: 200px;
-    padding: 10px 10px 10px 0;
-    overflow: hidden;
-  }
-  .search button {
-    margin-left: 0;
-  }
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .books-grid {

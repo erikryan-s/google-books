@@ -36,94 +36,64 @@ body {
 }
 
 .header {
-    text-decoration: none;
-    span {
-        font-size: 3rem;
+    &__link:link {
+        text-decoration: none;
     }
-}
-
-#googleLogo {
-    display: flex;
-    flex-direction: row;
-    color: white;
-}
-
-a:link {
-    text-decoration: none;
-}
-
-a:hover {
-    opacity: 0.8;
-}
-
-a:visited {
-    color: white;
-}
-
-.search-result-header {
-    h2 {
+    &__link:hover {
+        opacity: 0.7;
+    }
+    &__link:visited {
         color: white;
-        margin-top: 50px;
-        margin-bottom: 50px;
+    }
+
+    &__google-logo {
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+
+    &__books {
+        font-size: 2.5rem;
     }
 }
 
-.search {
+.searchbar {
     &__form {
-        input {
-            width: 400px;
-            padding: 10px 45px 10px 0;
-            @extend %remove-border;
-            border-bottom: 2px solid white;
-            color: white;
-            font-size: 20px;
-            word-spacing: 2px;
-            margin: 40px 0;
-        }
         ::placeholder {
             color: white;
             opacity: 0.5;
         }
-
-        button {
-            margin-left: -20px;
-
-            @extend %remove-border;
-            &:hover {
-                cursor: pointer;
-            }
-            i {
-                color: white;
-                font-size: 20px;
-                line-height: 20px;
-            }
-        }
     }
 
-    @media only screen and(max-width:414px) {
-        display: flex;
-        flex-direction: column;
-        input {
-            width: auto;
-            padding: 10px 10px 10px 0;
-            overflow: hidden;
-        }
-        button {
-            margin-left: 0;
-        }
+    &__input {
+        width: 400px;
+        padding: 10px 45px 10px 0;
+        @extend %remove-border;
+        border-bottom: 2px solid white;
+        color: white;
+        font-size: 1.2rem;
+        margin: 40px 0;
     }
 
-    @media only screen and(max-width:331px) {
-        display: flex;
-        flex-direction: column;
-        input {
-            width: 200px;
-            padding: 10px 10px 10px 0;
-            overflow: hidden;
+    &__button {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        outline: inherit;
+        &:hover {
+            cursor: pointer;
         }
-        button {
-            margin-left: 0;
+        &__img {
+            height: 25px;
         }
+    }
+}
+
+.search-result {
+    &__header {
+        color: white;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 }
 
