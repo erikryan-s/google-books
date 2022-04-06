@@ -58,10 +58,11 @@ Bonus (**optional, but highly recommended**):
 
 ## Design inspiration
 
-### Windows 10 Login Screen
+### Windows 10 Login Screen & Momentum browser extension
 
 <p align="center">
     <img src="https://thurrott.s3.amazonaws.com/2018/09/windows-10-skip-ahead.jpg" height="400" width=auto>
+    <img src="https://champinternet.com/wp-content/uploads/12-3-2014-blog.jpg" height="400" width=auto>
 </p>
 
 ## Future updates and current limitations
