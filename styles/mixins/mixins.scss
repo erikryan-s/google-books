@@ -1,0 +1,16 @@
+@use "../partials/palette";
+@use "../partials/typography";
+
+@mixin size($breakpoint) {
+    @if $breakpoint==lg {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==sm {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use "../partials/palette";
+@use "../partials/typography";
+@import "../mixins/mixins";
+
+.library-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    color: palette.$white;
+
+    @include size(lg) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @include size(sm) {
+        grid-template-columns: 1fr;
+    }
+}

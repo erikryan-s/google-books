@@ -1,0 +1,51 @@
+@use "../partials/palette";
+@use "../partials/typography";
+@import "../mixins/mixins";
+
+%remove-border {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.searchbar {
+    &__form {
+        ::placeholder {
+            color: palette.$white;
+            opacity: 0.5;
+        }
+    }
+
+    &__input {
+        width: 400px;
+        padding: 10px 45px 10px 0;
+        @extend %remove-border;
+        border-bottom: 2px solid palette.$white;
+        color: palette.$white;
+        font-size: 19px;
+        margin: 40px 0;
+    }
+
+    &__button {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        outline: inherit;
+        &:hover {
+            cursor: pointer;
+        }
+        &__img {
+            height: 25px;
+        }
+    }
+}
+
+.search-result {
+    &__header {
+        font-size: 23px;
+        color: palette.$white;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}

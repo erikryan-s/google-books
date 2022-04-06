@@ -1,0 +1,40 @@
+@use "../partials/palette";
+@use "../partials/typography";
+@import "../mixins/mixins";
+
+.header {
+    &__link:link {
+        text-decoration: none;
+    }
+    &__link:hover {
+        opacity: 0.7;
+    }
+    &__link:visited {
+        color: palette.$white;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: row;
+        font-size: 96px;
+        font-weight: 500;
+        &--blue {
+            color: #4285f4;
+        }
+        &--red {
+            color: #db4437;
+        }
+        &--yellow {
+            color: #f4b400;
+        }
+        &--green {
+            color: #0f9d58;
+        }
+    }
+
+    &__books {
+        padding-top: 35px;
+        font-size: 60px;
+        font-weight: 300;
+    }
+}

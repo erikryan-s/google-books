@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
@@ -9,12 +14,6 @@
 body {
   height: 100vh;
   background-color: #1f1f1f;
-}
-
-.searchbar__input {
-  background: none;
-  border: none;
-  outline: none;
 }
 
 #bg-image {
@@ -41,10 +40,12 @@ body {
   opacity: 0.7;
 }
 .header__link:visited {
-  color: white;
+  color: #ffffff;
 }
 .header__logo {
-  font-size: 4.5rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 96px;
   font-weight: 500;
 }
 .header__logo--blue {
@@ -60,19 +61,27 @@ body {
   color: #0f9d58;
 }
 .header__books {
-  font-size: 2.5rem;
+  padding-top: 35px;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.searchbar__input {
+  background: none;
+  border: none;
+  outline: none;
 }
 
 .searchbar__form ::placeholder {
-  color: white;
+  color: #ffffff;
   opacity: 0.5;
 }
 .searchbar__input {
   width: 400px;
   padding: 10px 45px 10px 0;
-  border-bottom: 2px solid white;
-  color: white;
-  font-size: 1.2rem;
+  border-bottom: 2px solid #ffffff;
+  color: #ffffff;
+  font-size: 19px;
   margin: 40px 0;
 }
 .searchbar__button {
@@ -90,7 +99,8 @@ body {
 }
 
 .search-result__header {
-  color: white;
+  font-size: 23px;
+  color: #ffffff;
   margin-top: 50px;
   margin-bottom: 50px;
 }
@@ -99,7 +109,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
-  color: white;
+  color: #ffffff;
 }
 @media only screen and (max-width: 992px) {
   .library-grid {
