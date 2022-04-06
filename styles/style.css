@@ -60,6 +60,11 @@ body {
   font-size: 60px;
   font-weight: 300;
 }
+.header__api {
+  padding-top: 35px;
+  font-size: 20px;
+  font-weight: 300;
+}
 
 .searchbar__input {
   background: none;
@@ -103,8 +108,8 @@ body {
 .library-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  color: #ffffff;
+  gap: 20px;
+  color: #1f1f1f;
 }
 @media only screen and (max-width: 992px) {
   .library-grid {
@@ -115,4 +120,41 @@ body {
   .library-grid {
     grid-template-columns: 1fr;
   }
+}
+
+.book-card {
+  padding: 10px;
+  background: rgba(230, 230, 230, 0.4);
+  border-radius: 30px;
+}
+@media only screen and (max-width: 576px) {
+  .book-card__image {
+    display: none;
+  }
+}
+.book-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+.book-card__content--link {
+  text-decoration: none;
+}
+.book-card__content--button {
+  width: 100px;
+  height: 25px;
+  background-color: #4d4d4d;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  color: #ffffff;
+  -webkit-transition: background 0.3s, border-radius 0.3s;
+  transition: background 0.3s, border-radius 0.3s;
+}
+.book-card__content--button:hover {
+  border-radius: 10px;
+  opacity: 0.7;
 }

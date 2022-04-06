@@ -1,19 +1,30 @@
 # Google Books
 
-// description
+A responsive user interface where you can search for books using the Google Books API. Implemented using knowledge gained about async / await functions as well as the ability to fetch APIs.
 
 🔗 [Live Demo](https://erikryan-s.github.io/google-books/)
+
+## Table of Contents
+
+-   [Requirements](#project-requirements)
+-   [Lifecycle and Implementation details](#lifecycle-and-implementation-details)
+-   [Design inspirations](#design-inspirations)
+-   [Future updates and current limitations](#future-updates-and-current-limitations)
 
 ## Screenshots
 
 <p align="center">
-    <img src="" height="400" width=auto>
-    <img src="" height="400" width=auto>
+    <img src="https://i.gyazo.com/1ec8a7fa5f6ea28f7599b7d3a1e3d762.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/902b9a66bb5610f97f17743f0a1f7bee.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/e86236b216860b217870bfe6caa0b96a.jpg" height="400" width=auto>
 </p>
 
 ## Goal
 
--   [requirements](#project-requirements)
+1. Create a page that allows users to search for books based on [requirements](#project-requirements)
+2. Separate DOM functions and non-DOM functions into different modules.
+3. Functions should do one thing and be as pure as possible.
+4. Parametize and abstract large pieces of code.
 
 ## Project Requirements
 
@@ -52,9 +63,21 @@ Bonus (**optional, but highly recommended**):
 -   Give feedback to the user when no book results can be found for the query.
 -   When a user clicks a book in the grid, a modal should appear with more book information, think about release, publish date, country, languages, etc.
 
-## Lifecycle & Implementation details
+## Lifecycle and Implementation details
+
+### Tech Used
+
+-   HTML
+-   CSS
+-   Sass
+-   JavaScript
+-   Google Books API
+-   Fetch
+-   Async/await
 
 ### Breakdown of logic
+
+// write here
 
 ## Design inspirations
 
@@ -66,3 +89,5 @@ Bonus (**optional, but highly recommended**):
 </p>
 
 ## Future updates and current limitations
+
+// write here
