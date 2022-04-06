@@ -2,12 +2,6 @@
 @use "../partials/typography";
 @import "../mixins/mixins";
 
-%remove-border {
-    background: none;
-    border: none;
-    outline: none;
-}
-
 .searchbar {
     &__form {
         ::placeholder {
