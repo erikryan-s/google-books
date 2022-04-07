@@ -14,9 +14,9 @@ A responsive user interface where you can search for books using the Google Book
 ## Screenshots
 
 <p align="center">
-    <img src="https://i.gyazo.com/1ec8a7fa5f6ea28f7599b7d3a1e3d762.jpg" height="400" width=auto>
-    <img src="https://i.gyazo.com/902b9a66bb5610f97f17743f0a1f7bee.jpg" height="400" width=auto>
-    <img src="https://i.gyazo.com/e86236b216860b217870bfe6caa0b96a.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/2adb8b2f21a04f6a616fd1ce195d5564.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/e877c7142c8c785927d60b9cc48507bb.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/9d75701da8fa1d5099e9a4647100222b.jpg" height="400" width=auto>
 </p>
 
 ## Goal
