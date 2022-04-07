@@ -6,6 +6,7 @@
         text-decoration: none;
     }
     &__link:hover {
+        transition: opacity 0.25s ease-in-out;
         opacity: 0.7;
     }
     &__link:visited {

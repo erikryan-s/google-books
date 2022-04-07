@@ -16,8 +16,13 @@
 }
 
 .book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     padding: 10px;
     background: rgba(#e6e6e6, 0.4);
+    color: palette.$white;
     border-radius: 30px;
 
     &__image {
@@ -26,32 +31,34 @@
         }
     }
 
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
+    &__link {
+        text-decoration: none;
+    }
+
+    &__author {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    &__button {
+        align-self: center;
+        width: 100px;
+        height: 25px;
+        border-radius: 40px;
+        text-align: center;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #4d4d4d;
         color: palette.$white;
-
-        &--link {
-            text-decoration: none;
-        }
-
-        &--button {
-            width: 100px;
-            height: 25px;
-            background-color: #4d4d4d;
-            border-radius: 40px;
-            text-align: center;
-            cursor: pointer;
-            padding: 5px;
-            color: palette.$white;
-            -webkit-transition: background 0.3s, border-radius 0.3s;
-            transition: background 0.3s, border-radius 0.3s;
-        }
-        &--button:hover {
-            border-radius: 10px;
-            opacity: 0.7;
-        }
+        transition: background 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    }
+    &__button:hover {
+        border-radius: 10px;
+        opacity: 0.7;
     }
 }

@@ -9,6 +9,7 @@ const searchBtn = document.querySelector(".searchbar__button");
 const searchInput = document.querySelector(".searchbar__input");
 const libraryContainer = document.querySelector(".library-grid");
 const searchHeader = document.querySelector(".search-result__header");
+const footer = document.querySelector(".footer");
 
 const bgImg = () => {
     // array of images
@@ -63,20 +64,17 @@ searchBtn.addEventListener("click", async (e) => {
                         alt="${title}"
                     />
                 </div>
-                <div class="book-card__content">
-                    <p class="book-card__content">${title}</p>
-                    <p>${authors}</p>
-
-                    <a
-                        class="book-card__content--link"
-                        href="${previewLink}"
-                        target="_blank"
-                        class="moreInfo"
-                        ><div class="book-card__content--button">
-                            Read Book
-                        </div>
-                    </a>
-                </div>
+                <p class="book-card__author">${authors}</p>
+                <p class="book-card__title">${title}</p>
+                <a
+                    class="book-card__link"
+                    href="${previewLink}"
+                    target="_blank"
+                    class="moreInfo"
+                    ><div class="book-card__button">
+                        Read Book
+                    </div>
+                </a>
             </div>
         `;
     });
