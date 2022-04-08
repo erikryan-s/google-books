@@ -8,8 +8,7 @@ const background = document.querySelector("#bg-image");
 const searchBtn = document.querySelector(".searchbar__button");
 const searchInput = document.querySelector(".searchbar__input");
 const libraryContainer = document.querySelector(".library-grid");
-const searchHeader = document.querySelector(".search-result__header");
-const footer = document.querySelector(".footer");
+const searchHeader = document.querySelector(".search-results__header");
 
 const bgImg = () => {
     // array of images

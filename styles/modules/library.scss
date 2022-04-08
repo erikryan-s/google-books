@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    color: #1f1f1f;
+    color: #121212;
 
     @include size(lg) {
         grid-template-columns: repeat(2, 1fr);

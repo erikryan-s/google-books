@@ -6,6 +6,7 @@ A responsive user interface where you can search for books using the Google Book
 
 ## Table of Contents
 
+-   [Screenshots](#screenshots)
 -   [Requirements](#project-requirements)
 -   [Lifecycle and Implementation details](#lifecycle-and-implementation-details)
 -   [Design inspirations](#design-inspirations)
@@ -14,9 +15,9 @@ A responsive user interface where you can search for books using the Google Book
 ## Screenshots
 
 <p align="center">
-    <img src="https://i.gyazo.com/2adb8b2f21a04f6a616fd1ce195d5564.jpg" height="400" width=auto>
-    <img src="https://i.gyazo.com/e877c7142c8c785927d60b9cc48507bb.jpg" height="400" width=auto>
-    <img src="https://i.gyazo.com/9d75701da8fa1d5099e9a4647100222b.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/65a0465840242b4be3a6731aa3933a17.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/4f6b78c5c3229221230aec3ab8bedbff.jpg" height="400" width=auto>
+    <img src="https://i.gyazo.com/9f791ae1cead04e60cc42b8ada36b644.jpg" height="400" width=auto>
 </p>
 
 ## Goal
