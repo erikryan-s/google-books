@@ -57,11 +57,7 @@ searchBtn.addEventListener("click", async (e) => {
         return `
             <div class="book-card">
                 <div class="book-card__image">
-                    <img
-                        id="bookImg"
-                        src="${imgLink}"
-                        alt="${title}"
-                    />
+                    <img id="bookImg" src="${imgLink}" alt="${title}" />
                 </div>
                 <p class="book-card__author">${authors}</p>
                 <p class="book-card__title">${title}</p>
@@ -70,9 +66,7 @@ searchBtn.addEventListener("click", async (e) => {
                     href="${previewLink}"
                     target="_blank"
                     class="moreInfo"
-                    ><div class="book-card__button">
-                        Read Book
-                    </div>
+                    ><div class="book-card__button">Read Book</div>
                 </a>
             </div>
         `;
