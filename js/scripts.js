@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // listen for click on search button
 searchBtn.addEventListener("click", async (e) => {
-    // prevent page refresh on click of search button
+    // prevent page refresh
     e.preventDefault();
 
     // store value of search input
