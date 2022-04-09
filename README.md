@@ -8,9 +8,9 @@ A responsive user interface where you can search for books using the Google Book
 
 -   [Screenshots](#screenshots)
 -   [Requirements](#project-requirements)
--   [Lifecycle and Implementation details](#lifecycle-and-implementation-details)
--   [Design inspirations](#design-inspirations)
--   [Future updates and current limitations](#future-updates-and-current-limitations)
+-   [Lifecycle and Implementation Details](#lifecycle-and-implementation-details)
+-   [Design Inspirations](#design-inspirations)
+-   [Future Updates and Current Limitations](#future-updates-and-current-limitations)
 
 ## Screenshots
 
@@ -64,7 +64,7 @@ Bonus (**optional, but highly recommended**):
 -   Give feedback to the user when no book results can be found for the query.
 -   When a user clicks a book in the grid, a modal should appear with more book information, think about release, publish date, country, languages, etc.
 
-## Lifecycle and Implementation details
+## Lifecycle and Implementation Details
 
 ### Tech Used
 
@@ -76,19 +76,19 @@ Bonus (**optional, but highly recommended**):
 -   Fetch
 -   Async/await
 
-### Breakdown of logic
+### Breakdown Of Logic
 
 // write here
 
-## Design inspirations
+## Design Inspirations
 
-### Windows 10 Login Screen & Momentum browser extension
+### Windows 10 Login Screen & Momentum Browser Extension
 
 <p align="center">
     <img src="https://thurrott.s3.amazonaws.com/2018/09/windows-10-skip-ahead.jpg" height="400" width=auto>
     <img src="https://champinternet.com/wp-content/uploads/12-3-2014-blog.jpg" height="auto" width="711">
 </p>
 
-## Future updates and current limitations
+## Future Updates and Current Limitations
 
 // write here
