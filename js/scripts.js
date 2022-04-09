@@ -10,6 +10,7 @@ const searchInput = document.querySelector(".searchbar__input");
 const libraryContainer = document.querySelector(".library-grid");
 const searchHeader = document.querySelector(".search-results__header");
 
+// function to change background image on refresh
 const bgImg = () => {
     // array of images
     let images = [
@@ -38,22 +39,30 @@ document.addEventListener("DOMContentLoaded", () => {
     bgImg();
 });
 
+// listen for click on search button
 searchBtn.addEventListener("click", async (e) => {
+    // prevent page refresh on click of search button
     e.preventDefault();
-    const searchQuery = searchInput.value;
-    // if (searchQuery === "") {
-    //     openModal()
-    // }
-    const books = await getBooks(GOOGLEBOOKS_URL, searchQuery);
 
+    // store value of search input
+    const searchQuery = searchInput.value;
+    // await API data
+    const books = await getBooks(GOOGLEBOOKS_URL, searchQuery);
+    // map through API
     const booksList = books.map((book) => {
+        // thumbnail for book
         const imgLink =
+            // * if thumbnail does not exist, (?.) will cause it to return undefined, if undefined (??) will return default thumbnail
             book.volumeInfo.imageLinks?.thumbnail ??
             "../assets/library/defaultbook.jpg";
+        // book title
         const title = book.volumeInfo.title;
+        // book author/s
         const authors = book.volumeInfo.authors;
-        const previewLink = book.volumeInfo.previewLink;
+        // link to book on https://books.google.com/
+        const linkToBook = book.volumeInfo.linkToBook;
 
+        // HTML layout for results
         return `
             <div class="book-card">
                 <div class="book-card__image">
@@ -63,7 +72,7 @@ searchBtn.addEventListener("click", async (e) => {
                 <p class="book-card__title">${title}</p>
                 <a
                     class="book-card__link"
-                    href="${previewLink}"
+                    href="${linkToBook}"
                     target="_blank"
                     class="moreInfo"
                     ><div class="book-card__button">Read Book</div>
@@ -72,6 +81,8 @@ searchBtn.addEventListener("click", async (e) => {
         `;
     });
 
+    // add return to library-grid section in HTML
     libraryContainer.innerHTML = booksList.join("");
+    // replace header with search input
     searchHeader.innerText = `Your search results for: "${searchQuery}"`;
 });
