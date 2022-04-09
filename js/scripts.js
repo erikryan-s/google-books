@@ -1,40 +1,16 @@
 import { getBooks } from "./modules/getBooks.js";
+import { bgImg } from "./modules/bgImg.js";
 
 // ! READ-ONLY
 const GOOGLEBOOKS_URL = "https://www.googleapis.com/books/v1/volumes?q=";
 
 // query selectors
-const background = document.querySelector("#bg-image");
 const searchBtn = document.querySelector(".searchbar__button");
 const searchInput = document.querySelector(".searchbar__input");
 const libraryContainer = document.querySelector(".library-grid");
 const searchHeader = document.querySelector(".search-results__header");
 
-// function to change background image on refresh
-const bgImg = () => {
-    // array of images
-    let images = [
-        "bg1.jpg",
-        "bg2.jpg",
-        "bg3.jpg",
-        "bg4.jpg",
-        "bg5.jpg",
-        "bg6.jpg",
-        "bg7.jpg",
-        "bg8.jpg",
-        "bg9.jpg",
-        "bg10.jpg",
-    ];
-    // amount of images
-    let numOfImg = images.length;
-    // get random image
-    let i = Math.floor(numOfImg * Math.random());
-    // apply image as background
-    const urlString = `url(./assets/backgrounds/${images[i]})`;
-    background.style.backgroundImage = urlString;
-};
-
-// on refresh
+// run background randomizer on refresh
 document.addEventListener("DOMContentLoaded", () => {
     bgImg();
 });
