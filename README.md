@@ -76,9 +76,18 @@ Bonus (**optional, but highly recommended**):
 -   Fetch
 -   Async/await
 
-### Breakdown Of Logic
+### Breakdown of Logic
 
-// write here
+-   Implement general styling of website and UI using HTML and SCSS
+    -   Figured out a way to display random images as the background
+    -   Create a searchbar that the user can use to search for books
+-   Write a function to get API data
+    -   Using Async / Await
+-   Write a function that is able to display books related to what the user has inputted into the searchbar
+    -   Mapping through API data to get relevant information
+    -   Get that information to display in a grid for the user to browse through
+    -   When a user clicks a book in the grid, a modal should appear with more book information
+    -   Give feedback to the user when no book results can be found for the query.
 
 ## Design Inspirations
 
@@ -91,4 +100,5 @@ Bonus (**optional, but highly recommended**):
 
 ## Future Updates and Current Limitations
 
-// write here
+-   Give feedback to the user when no book results can be found for the query.
+-   When a user clicks a book in the grid, a modal should appear with more book information, think about release, publish date, country, languages, etc.
