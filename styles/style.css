@@ -133,6 +133,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 10px;
+  gap: 10px;
   background: rgba(230, 230, 230, 0.4);
   color: #ffffff;
   border-radius: 30px;
@@ -153,7 +154,7 @@ body {
   font-size: 16px;
   font-weight: 300;
 }
-.book-card__button {
+.book-card__read, .book-card__info {
   align-self: center;
   width: 100px;
   height: 25px;
@@ -163,9 +164,60 @@ body {
   padding: 5px;
   background-color: #4d4d4d;
   color: #ffffff;
-  transition: background 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
-.book-card__button:hover {
+.book-card__read:hover, .book-card__info:hover {
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+.modal::backdrop {
+  background-color: #121212;
+  opacity: 0.1;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 20px;
+  max-width: 70ch;
+  padding: 15px;
+  background: rgba(18, 18, 18, 0.9);
+  color: #ffffff;
+  border: 5px solid #121212;
+  border-radius: 30px;
+}
+.modal-content__info #authors {
+  font-size: 24px;
+  font-weight: 500;
+}
+.modal-content__info #title {
+  font-size: 20px;
+}
+.modal-content__info strong {
+  font-weight: 500;
+}
+.modal-content__info #description,
+.modal-content__info #publish,
+.modal-content__info #language,
+.modal-content__info #page-count {
+  font-size: 16px;
+}
+.modal-content .close-modal {
+  width: 100px;
+  height: 25px;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+  padding: 5px;
+  background-color: #4d4d4d;
+  color: #ffffff;
+  transition: opacity 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+}
+.modal-content .close-modal:hover {
   border-radius: 10px;
   opacity: 0.7;
 }

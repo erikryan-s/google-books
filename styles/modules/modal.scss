@@ -1,0 +1,58 @@
+@use "../partials/palette";
+@import "../mixins/mixins";
+
+.modal::backdrop {
+    background-color: palette.$black;
+    opacity: 0.1;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 20px;
+    max-width: 70ch;
+    padding: 15px;
+    background: rgba(palette.$black, 0.9);
+    color: palette.$white;
+    border: 5px solid palette.$black;
+    border-radius: 30px;
+
+    &__info {
+        #authors {
+            font-size: 24px;
+            font-weight: 500;
+        }
+        #title {
+            font-size: 20px;
+        }
+
+        strong {
+            font-weight: 500;
+        }
+        #description,
+        #publish,
+        #language,
+        #page-count {
+            font-size: 16px;
+        }
+    }
+
+    .close-modal {
+        width: 100px;
+        height: 25px;
+        border-radius: 40px;
+        text-align: center;
+        cursor: pointer;
+        padding: 5px;
+        background-color: #4d4d4d;
+        color: palette.$white;
+        transition: opacity 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+    }
+    .close-modal:hover {
+        border-radius: 10px;
+        opacity: 0.7;
+    }
+}
