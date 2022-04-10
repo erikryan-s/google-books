@@ -12,7 +12,7 @@ export const performSearch = async () => {
     // store value of search input
     const searchQuery = searchInput.value;
 
-    // when the user doesn't specify a searchTerm (doesn't type anything)
+    // when the user doesn't specify a search term
     if (searchQuery === "") {
         alert("Please tell me what you're looking for...");
         return;
