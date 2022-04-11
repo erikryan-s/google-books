@@ -1,13 +1,13 @@
 import { performSearch } from "./modules/performSearch.js";
 import { bgImg } from "./modules/bgImg.js";
-import { showModal } from "./modules/showModal.js";
+// import { showModal } from "./modules/showModal.js";
 
 // query selectors
 const searchBtn = document.querySelector(".searchbar__button");
 const enterKey = document.querySelector("#searchbar-button");
-const moreInfoBtns = document.querySelectorAll(".book-card__info");
-const closeModal = document.querySelector(".close-modal");
-const modal = document.querySelector(".modal");
+// const moreInfoBtns = document.querySelectorAll(".book-card__info");
+// const closeModal = document.querySelector(".close-modal");
+// const modal = document.querySelector(".modal");
 
 // * background randomizer
 // on page refresh

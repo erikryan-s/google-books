@@ -31,6 +31,8 @@ export const performSearch = async () => {
         const title = book.volumeInfo.title;
         // book author/s
         const authors = book.volumeInfo?.authors ?? "Unknown author/s";
+        // book description
+        const description = book.volumeInfo?.description ?? "Description N/A";
         // link to book on https://books.google.com/
         const linkToBook = book.volumeInfo.previewLink;
 
@@ -44,15 +46,17 @@ export const performSearch = async () => {
                         alt="${title}"
                     />
                 </div>
-                <p class="book-card__author">${authors}</p>
-                <p class="book-card__title">${title}</p>
-                <a
-                    class="book-card__link"
-                    href="${linkToBook}"
-                    target="_blank"
-                    ><div class="book-card__read">Read Book</div>
-                </a>
-                <div class="book-card__info">More Info</div>
+                <div class="book-card__content">
+                    <p class="book-card__author">${authors}</p>
+                    <p class="book-card__title">${title}</p>
+                    <p class="book-card__description">${description}</p>
+                    <a
+                        class="book-card__link"
+                        href="${linkToBook}"
+                        target="_blank"
+                        ><div class="book-card__read">Read Book</div>
+                    </a>
+                </div>
             </div>
                  `;
     });
