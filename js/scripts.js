@@ -31,8 +31,8 @@ enterKey.addEventListener("keyup", (e) => {
 });
 
 // * modal
-moreInfoBtns.forEach((button) => {
-    button.addEventListener("click", () => {
-        modal.showModal();
-    });
-});
+// moreInfoBtns.forEach((button) => {
+//     button.addEventListener("click", () => {
+//         modal.showModal();
+//     });
+// });

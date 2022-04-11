@@ -1,5 +1,5 @@
 // query selectors for modal
-const modalSection = document.querySelector(".modal-section");
+// const modalSection = document.querySelector(".modal-section");
 
 // * modal
-export const showModal = async () => {};
+// export const showModal = async () => {};
