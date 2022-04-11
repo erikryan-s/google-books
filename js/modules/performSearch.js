@@ -36,24 +36,24 @@ export const performSearch = async () => {
 
         // HTML layout for results
         return `
-                <div class="book-card">
-                    <div class="book-card__image">
-                        <img
-                            id="bookImg"
-                            src="${bookThumbnail}"
-                            alt="${title}"
-                        />
-                    </div>
-                    <p class="book-card__author">${authors}</p>
-                    <p class="book-card__title">${title}</p>
-                    <a
-                        class="book-card__link"
-                        href="${linkToBook}"
-                        target="_blank"
-                        ><div class="book-card__read">Read Book</div>
-                    </a>
-                    <div class="book-card__info">More Info</div>
+            <div class="book-card">
+                <div class="book-card__image">
+                    <img
+                        id="bookImg"
+                        src="${bookThumbnail}"
+                        alt="${title}"
+                    />
                 </div>
+                <p class="book-card__author">${authors}</p>
+                <p class="book-card__title">${title}</p>
+                <a
+                    class="book-card__link"
+                    href="${linkToBook}"
+                    target="_blank"
+                    ><div class="book-card__read">Read Book</div>
+                </a>
+                <div class="book-card__info">More Info</div>
+            </div>
                  `;
     });
 
