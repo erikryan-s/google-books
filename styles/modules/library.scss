@@ -35,8 +35,8 @@
     &__content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        justify-content: safe center;
+        align-items: safe center;
         gap: 10px;
         padding: 10px;
         margin: 0px 40px;
@@ -44,6 +44,8 @@
         border-radius: 15px;
         background-color: palette.$black;
         opacity: 0.7;
+        max-height: 200px;
+        overflow: auto;
     }
 
     &__author {
@@ -59,7 +61,7 @@
     &__description {
         font-size: 14px;
         font-weight: 300;
-        text-align: center;
+        text-align: left;
 
         @include size(sm) {
             display: none;
