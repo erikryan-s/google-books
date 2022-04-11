@@ -1,6 +1,6 @@
 import { performSearch } from "./modules/performSearch.js";
 import { bgImg } from "./modules/bgImg.js";
-import { showModal } from "./modules/openModal.js";
+import { showModal } from "./modules/showModal.js";
 
 // query selectors
 const searchBtn = document.querySelector(".searchbar__button");
@@ -30,6 +30,7 @@ enterKey.addEventListener("keyup", (e) => {
     }
 });
 
+// * modal
 moreInfoBtns.forEach((button) => {
     button.addEventListener("click", () => {
         modal.showModal();
