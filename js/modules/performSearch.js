@@ -26,7 +26,7 @@ export const performSearch = async () => {
         const bookThumbnail =
             // * if thumbnail does not exist, (?.) will cause it to return undefined, if undefined (??) will return default thumbnail
             book.volumeInfo.imageLinks?.thumbnail ??
-            "../assets/library/defaultbook.jpg";
+            "./assets/library/defaultbook.jpg";
         // book title
         const title = book.volumeInfo.title;
         // book author/s

@@ -53,7 +53,7 @@ Styling (required):
 
 Application Design (required):
 
--   You should separate DOM functions and non-DOM functions in different modules Example: https://github.com/nology-tech/kiribati-resources/tree/main/js/modules
+-   You should separate DOM functions and non-DOM functions in different modules
 -   Write as many non-DOM functions as you can
 -   Functions should do 1 thing, and should be as pure and reusable as possible
 -   Always use iterators over loops
